@@ -1,8 +1,5 @@
-<p style="color: green"><%= notice %></p>
-
-<h1>Restaurants</h1>
-<%= link_to "See top restaurants", top_restaurants_path %>
-
+<h1>5 Stars Restaurants</h1>
+<%= link_to "Back to all restaurants", restaurants_path %>
 <div id="restaurants">
   <% @restaurants.each do |restaurant| %>
     <%= render restaurant %>
@@ -12,5 +9,3 @@
     <hr>
   <% end %>
 </div>
-
-<%= link_to "New restaurant", new_restaurant_path %>
